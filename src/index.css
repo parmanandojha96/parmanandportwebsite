@@ -1,13 +1,277 @@
-body {
+/*=============================Global=========================*/
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #383737;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.hr{
+  border:none;
+  padding: 2px 0px;
+  border-bottom: 2px solid rgb(255, 255, 255) ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media(max-width:768px){
+  body{
+    margin-left: 30px;
+    margin-right: 30px;
+  } 
 }
+@media(max-width:430px){
+  body{
+    margin-left: 20px;
+    margin-right: 20px;
+  } 
+}
+/*=============================Header========================*/
+.nav{
+  margin:30px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+.logo{
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 18px;
+}
+.portfolio{
+  text-align: center;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 15px;
+}
+.work_header{
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 15px;
+}
+@media(max-width:768px){
+  .nav{
+    margin:30px 0 20px 0;
+  }
+  .logo{
+    font-size: 15px;
+  }
+  .portfolio{
+    font-size: 10px;
+  }
+  .work_header{
+    font-size: 10px;
+  }
+}
+
+/*=============================Hero=========================*/
+
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 150px 0;
+}
+.heroText{
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 100px;
+}
+.hey{
+  font-size: 120px;
+}
+.parmanand{
+  color:  rgb(255, 166, 65);
+}
+.scroll{
+  color: white;
+  font-family: 'Raleway';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-bottom: 100px;
+  height: 60px;
+  border-left: 2px solid white;
+}
+
+@media(max-width:768px){
+  .hero{
+    padding: 100px 0;
+  }
+  .heroText{
+    font-size: 60px;
+  }
+  .hey{
+    font-size: 80px;
+  }
+  .scroll{
+    font-size: 12px;
+    padding-left: 8px;
+    padding-bottom: 60px;
+    height: 50px;
+  }
+}
+
+@media(max-width:430px){
+  .hero{
+    padding: 100px 0;
+  }
+  .heroText{
+    font-size: 35px;
+  }
+  .hey{
+    font-size: 50px;
+  }
+  .scroll{visibility: hidden;
+  }
+}
+/*=============================Work=========================*/
+
+
+.workcol{
+  margin: 150px 0;
+}
+.count{
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.work{
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 80px;
+  padding: 40px 0;
+}
+.work:hover{
+  color:   rgb(255, 166, 65);
+}
+
+
+@media(max-width:768px){
+ 
+.workcol{
+  margin: 120px 0;
+}
+.count{
+  font-size: 18px;
+}
+.work{
+  font-size: 55px;
+  padding: 30px 0;
+}
+
+}
+
+@media(max-width:430px){
+ 
+  .workcol{
+    margin: 120px 0;
+  }
+  .count{
+    font-size: 12px;
+  }
+  .work{
+    font-size: 35px;
+    padding: 38px 0;
+  }
+  
+}
+
+
+/*=============================About=========================*/
+
+
+.aboutHeading{
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 120px;
+  color:  rgb(255, 166, 65);
+  padding: 20px 0;
+}
+.aboutText{
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 80px;
+  letter-spacing: 1px;
+  padding: 20px 0 50px 0;
+}
+.ques{
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 30px;  
+}
+.ans{
+  padding-top: 5px;
+  text-decoration: underline;
+}
+a:visited,a:link{
+  color: white;
+}
+a:hover{
+  color:  rgb(255, 166, 65);
+}
+
+@media(max-width:768px){
+ 
+.aboutHeading{
+  font-size: 60px;
+}
+.aboutText{
+  font-size: 40px;
+  letter-spacing: 0.6px;
+  padding: 20px 0 40px 0;
+}
+.ques{
+  font-size: 20px;  
+}
+}
+
+@media(max-width:430px){
+ 
+  .aboutHeading{
+    font-size: 35px;
+    padding: 20px 0;
+  }
+  .aboutText{
+    font-size:25px;
+    letter-spacing:0.6px;
+    padding: 20px 0 30px 0;
+  }
+  .ques{
+    font-size: 15px;  
+  }
+  .ans{
+    padding-top: 2px;
+  }
+  }
+/*=============================Footer=========================*/
+
+
+.footer{
+  position: relative;
+  bottom: 40px;
+  padding: 50px 0 20px 0;
+}
+.footerbar{
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(255, 255, 255) ;
+}
+
+
+@media(max-width:768px){
+ 
+  .footer{
+    position: relative;
+    bottom: 40px;
+    padding: 30px 0 20px 0;
+  }
+  }
